@@ -34,4 +34,4 @@ jobs:
     - name: Run Test Suite
       run: |
         # Pytest will automatically discover generate_mock_data and run test_integration.py
-        pytest -v
+        python -m pytest -v
