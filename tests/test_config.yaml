@@ -1,0 +1,23 @@
+data:
+  root_file_path: "./mock_data/smart_grid_telemetry.root"
+  output_h5_dir: "./tests/h5_temp"
+  model_dir: "./tests/models_temp"
+  plot_dir: "./tests/plots_temp"
+
+  
+features:
+  - name: "turbine_wind_speed_ms"
+    log_transform: false
+  - name: "turbine_efficiency"
+    log_transform: false
+  - name: "turbine_theoretical_mw"
+    log_transform: false
+
+target:
+  name: "grid_delivered_power_mw"
+  log_transform: false
+
+model:
+  activation: "relu"
+  epochs: 2
+  batch_size: 2

@@ -1,0 +1,11 @@
+uproot
+pandas
+numpy
+sympy
+tensorflow==2.15.0
+tensorflow-quantum
+cirq
+scikit-learn
+awkward
+tables
+pytest
